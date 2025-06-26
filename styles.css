@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+.fas.fa-tint {
+    color: #e74c3c; /* Red color for the blood drop */
+    font-size: 24px; /* Adjust the size of the icon */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+body {
+    background: #ff5733; /* Blood-red background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+/* Container for centering the panel */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+/* Blood donation panel styles */
+.panel {
+    background:#C22B2E;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+
+}
+
+.panel h1 {
+    color: #ff6f61; /* Blood-red color */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.panel .intro {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.question {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.question label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.question input {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.form-btn button {
+    background-color: #ff6f61; /* Blood-red */
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-btn button:hover {
+    background-color: #e45a50; /* Darker red */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .panel {
+        padding: 1.5rem;
+    }
+
+    .panel h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro {
+        font-size: 0.9rem;
+    }
+
+    .question label {
+        font-size: 0.9rem;
+    }
+
+    .form-btn button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+.blood{
+    text-align: center;
+    padding: 20px;
+    background-color: #C22B2E;
+    color:black;
+    display: flex;
+    margin:50px;
+
+}
+
+/* donation imfo*/
+.donation-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.donation-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.donation-info p {
+    font-size: 1.2em;
+
+/* Blood Donation Section */
+.blood {
+    padding: 50px 20px;
+    background: red;
+    text-align: center;
+}
+
+#blood-donation h2 {
+    font-size: 2.5em;
+    color: red;
+}
+
+#blood-donation form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#blood-donation label {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+#blood-donation input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#blood-donation button {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#blood-donation button:hover {
+    background-color: #c0392b;
+}
+
+/* Organ Donation Section */
+#organ-donation {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+#organ-donation h2 {
+    font-size: 2.5em;
+    color: #2ecc71;
+}
+
+#organ-donation form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#organ-donation select, #organ-donation input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#organ-donation button {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#organ-donation button:hover {
+    background-color: #27ae60;
+}
+}
+

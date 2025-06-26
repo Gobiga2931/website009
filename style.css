@@ -1,0 +1,716 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fa-solid fa-house-heart{
+    color:#ccc;
+}
+.fas.fa-tint {
+    color: #C51111;
+    font-size: 24px;
+    margin-right: 10px;
+}
+/*header{
+    position: fixed;
+} Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #C51111;
+    color: #333;
+}
+.logo h1 img{
+    border-radius: 70px;
+}
+
+
+/* Header */
+header {
+    background-color:#C30913 ;
+    color: white;
+    padding: 15px 0;
+    box-shadow: rgb(50,50,93,0.25) 0px 13px 27px -5px, rgb(0,0,0,0.3) 0px 8px 16px -8px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: rgb(50,50,93,0.25) 0px 13px 27px -5px, rgb(0,0,0,0.3) 0px 8px 16px -8px;
+}
+
+header .logo h1 {
+    display: flex;;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-links li {
+    margin: 0 15px;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 5px 15px;
+}
+
+header .nav-links a:hover {
+    background-color:#c91818 ;
+    border-radius: 5px;
+}
+
+  
+
+/*hand imag*/
+.hand  {
+    width: 50px;
+    height:100px;
+    margin-top:-70%;
+    margin-left:74%;
+    margin-right: 120%;
+    margin-bottom:50%;
+    padding-top: 50%;
+    transform: scaleX(1.2);
+    border: none;
+    display: left;
+    /*transition: transform 0.5s ease, opacity 0.5s ease;*/
+
+}
+
+/*.hand {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}*/
+
+.hand {
+   width: 15%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    animation: moveRightToCenter 2s ease-out forwards;
+    transform: rotate(45deg);
+}
+@keyframes moveRightToCenter {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+        transform: translateX(0); /* End at the center */
+    }
+}
+
+/*.hand : hover img {
+     opacity: 0.8
+     }
+
+
+/*fancy button*/
+.fancy-button button {
+    background: linear-gradient(45deg, #ccc, #c0392b); 
+    color: white;
+    font-size: 18px;
+    margin-left:20%;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-weight: 600;
+    display:flex;
+    justify-content: space-around;
+  }
+  
+  /* Hover effect */
+  .fancy-button button:hover {
+    background: linear-gradient(45deg, #e74c3c, #e6f7ff); /* Reverse the gradient */
+    transform: translateY(-4px); /* Slight lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  }
+  
+  /* Active effect (when button is pressed) */
+  .fancy-button:active {
+    transform: translateY(-1px); /* Slightly shrink on click */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow when pressed */
+  }
+  
+  /* Focus effect (when button gets focus from keyboard or mouse) */
+  .fancy-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.8); /* Custom blue glow */
+  }
+  
+  /* Additional accessibility styling for button 
+  .fancy-button:disabled {
+    background: #ccc;
+    color: #777;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+/* Home Section */
+#home {
+    background-color: #C51111;
+    color: white;
+    padding: 40px 10px;
+    text-align: left;
+}
+
+
+#home h2 {
+    font-size: 2.5em;
+}
+
+#home button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #C51111;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#home button:hover {
+    background-color: red;
+    color: #fff;
+}
+.intro {
+    width: 100%;
+    text-align: left;
+  }
+  
+.animated-text {
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    position: relative;
+    animation: moveToCenter 2s ease-out forwards;
+  }
+  
+  @keyframes moveToCenter {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+
+/* Donation blood and organ */
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background: #e6f7ff;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #3498db;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact label {
+    font-size: 1.1em;
+    margin: 10px 0 5px;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #2980b9;
+}
+
+
+
+.scroll {
+    margin-top: -7%;
+    padding: 40px;
+    text-align: left;
+    width: 80%;
+    margin-top: -1%;
+
+}
+
+.marquee {
+    font-size: 20px;
+    background-color: white;
+    padding: 5x;
+    color: #C51111;
+    border-radius: 10px;
+    margin: 5px, 5px;
+    width:100%;
+    box-sizing: border-box;
+    align-items: left;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .marquee {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+.rows{
+
+    padding-bottom: 40%;
+    width: 85%;
+
+}
+
+.slideshow{
+    position: fixed;
+}
+.slideshow-container img {
+    position:absolute;
+    margin-top: 45%;
+    margin-left: 10%;
+    margin-bottom: -5%;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    opacity: 0;   /* Hide images initially */
+    animation: slide 20s infinite;
+     /* Slide through images */
+}
+.slideshow-container img {
+    /*border: 5px solid #faf6f6;   Orange-red border */
+    border-radius: 10px;        /* Rounded corners */
+    box-shadow: rgba(245, 245, 246, 0.25) 0px 13px 27px -5px, rgba(250, 248, 248, 0.3) 0px 8px 16px -8px; /* Shadow around the image */
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slide {
+    0%, 35% {
+        opacity: 0;
+    }
+    35%, 100% {
+        opacity: 1;
+    }
+}
+
+/* Create delay for each image */
+.slideshow-container img:nth-child(1) {
+    animation-delay: 0s;
+}
+.slideshow-container img:nth-child(2) {
+    animation-delay: 5s;  /* Image 2 starts after 4 seconds */
+}
+.slideshow-container img:nth-child(3) {
+    animation-delay: 10s;  /* Image 3 starts after 8 seconds */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .slideshow-container {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+}
+/* Intro Section */
+.impo{
+    margin-top: 5%;
+}
+.first {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+.first h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:#c0392b;
+}
+
+.first p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Importance Section */
+.importance {
+    margin: 10px;
+}
+
+.importance h2 {
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.points {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.point {
+    
+    background :#e6f7ff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.point:hover {
+    transform: scale(1.05);
+}
+
+.point img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.point h3 {
+    font-size: 1.4rem;
+    color: #ff4b5c;
+    margin-bottom: 10px;
+}
+
+.point p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Call-to-action Section */
+.cta {
+    background:  #C51111;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cta a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta a:hover {
+    background: #ff4b5c;
+}
+
+.impo{
+    background-color:  #C51111;
+}
+
+
+        .news{
+            background-color: #C51111;
+        }
+        .cta-button {
+            background-color: white;
+            color: #ff5733;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .cta-button:hover {
+                background-color:#c91818 ;
+        }
+        .about h2{
+            color:#C51111;
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .about, .testimonials {
+            background-color: white;
+            margin: 30px auto;
+            max-width: 1200px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .about,.testimonials img{
+            
+            border-radius: 10px;
+            border: 5px solid #C51111;
+            box-shadow: rgba(236, 20, 31, 0.25) 0px 13px 27px -5px, rgba(241, 68, 68, 0.3) 0px 8px 16px -8px; 
+        }
+        .about h2, .testimonials h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color:#C51111;
+        }
+        .about p, .testimonials p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #C51111;
+        }
+        .testimonial {
+            margin-top: 30px;
+            font-style: italic;
+            color: #555;
+        }
+
+/*login page*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.box{
+    height: 400px;
+    width: 400px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    gap: 20px;
+    border-radius: 10px;
+}
+.top{
+    height: 100px;
+    width: 100%;
+}
+.bottom{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 99, 99);
+}
+.img{
+    height: 100%;
+    width: 100%;
+    background-image: url("donate2.jpg");
+    background-size: cover;
+    background-repeat:no-repeat ;
+    position: relative;
+}
+.in{
+height: 200px;
+width: 100%;
+background-color: rgba(236, 20, 31, 0.25);
+position: relative;
+top: 120px;
+display: flex;
+flex-direction: column;
+}
+.box1{
+    margin: 10px;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*button{
+    height: 40px;
+    width: 120px;
+    padding: 5px;
+    border-radius: 5px;;
+}
+*/
+/* Style the login box
+ 
+    margin-left: 10%;
+    margin-bottom: -5%; */
+/* About Section */
+.volunt{
+    align-items: center;
+   
+}
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background: #e6f7ff;
+}
+
+#about h2 {
+    font-size: 2em;
+}
+
+#about p {
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+.volunt img {
+    /*border: 5px solid #faf6f6;   Orange-red border */
+    border-radius: 10px;        /* Rounded corners */
+    box-shadow: rgba(245, 245, 246, 0.25) 0px 13px 27px -5px, rgba(250, 248, 248, 0.3) 0px 8px 16px -8px;; /* Shadow around the image */
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slide {
+    0%, 35% {
+        opacity: 0;
+    }
+    35%, 100% {
+        opacity: 1;
+    }
+}
+
+/* Create delay for each image */
+.volunt img:nth-child(1) {
+    animation-delay: 0s;
+}
+.volunt img:nth-child(2) {
+    animation-delay: 5s;  /* Image 2 starts after 4 seconds */
+}
+/*.slideshow-container img:nth-child(3) {
+    animation-delay: 10s; } Image 3 starts after 8 seconds */
+
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .volunt img {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+}
+.chatbot-icon {
+    position: fixed;
+    bottom: 30px; /* Distance from the bottom of the page */
+    right: 30px; /* Distance from the right */
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(45deg, #f50404, #e93434); /* Gradient background */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid #faf6f6;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 15px rgba(255, 252, 252, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition on hover */
+    z-index: 1000;
+    transform: scale(1); /* Default scale */
+  }
+  
+  /* Chatbot icon hover effect */
+  .chatbot-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    background: linear-gradient(45deg, #fe3a3b, #e92807); /* Reverse gradient */
+  }
+  
+  /* Add animation to the icon */
+  .chatbot-icon i {
+    font-size: 30px;
+    animation: bounce 2s infinite; /* Animation for a bouncing effect */
+    
+  }
+  
+  /* Keyframe animation for bouncing effect */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Bouncing movement */
+    }
+  }
+  
+  /* Optional: Font Awesome icons (you need to include FontAwesome CDN) */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+  
+
+  /*section {
+    padding: 60px 20px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#about, #mission, #team {
+    text-align: center;
+}*/
+.feed button {
+    display: block;
+    width: 30%;
+    padding: 12px;
+    background-color: #C51111; /* Red color */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feed button:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:  #C51111;
+    color: white;
+}
+.menu-icon{
+    display:none;
+}
+
+
